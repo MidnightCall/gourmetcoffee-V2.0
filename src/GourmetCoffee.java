@@ -190,16 +190,14 @@ public class GourmetCoffee  {
 	 * @param newFormatter a sales formatter
 	 */
 	private void setSalesFormatter(SalesFormatter newFormatter){
-
-		/* PLACE YOUR CODE HERE */
+		salesFormatter = newFormatter;
 	}
 
 	/**
 	 * Displays the sales information in the current format.
 	 */
 	private void displaySales() {
-
-		/* PLACE YOUR CODE HERE */
+		stdOut.println(salesFormatter.formatSales(sales));
 	}
 
 	/**
@@ -213,19 +211,16 @@ public class GourmetCoffee  {
 		while (choice != 0)  {
 
 			if (choice == 1)  {
-
-				/* PLACE YOUR CODE HERE */
-
+				setSalesFormatter(
+						PlainTextSalesFormatter.getSingletonInstance());
 			} else if (choice == 2)  {
-
-				/* PLACE YOUR CODE HERE */
-
+				setSalesFormatter(
+						HTMLSalesFormatter.getSingletonInstance());
 			} else if (choice == 3)  {
-
-				/* PLACE YOUR CODE HERE */
-
+				setSalesFormatter(
+						XMLSalesFormatter.getSingletonInstance());
 			}
-
+			displaySales();
 			choice = getChoice();
 		}
 	}

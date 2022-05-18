@@ -31,7 +31,7 @@ public class PlainTextSalesFormatter implements SalesFormatter {
                 out += i.getQuantity() + " " + i.getProduct().getCode() + " "
                         + i.getProduct().getPrice() + NEW_LINE;
             }
-            out += o.getTotalCost();
+            out += o.getTotalCost() + NEW_LINE;
         }
 
         return out;
