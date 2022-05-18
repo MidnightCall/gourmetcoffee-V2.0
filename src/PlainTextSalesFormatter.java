@@ -19,7 +19,6 @@ public class PlainTextSalesFormatter implements SalesFormatter {
     @Override
     public String formatSales(Sales sales){
         String out = "";
-        double total = 0;
         int number = 0;
 
         for(Iterator salesIter = sales.getOrdersIterator(); salesIter.hasNext(); ){
@@ -31,10 +30,9 @@ public class PlainTextSalesFormatter implements SalesFormatter {
                 OrderItem i = (OrderItem) orderIter.next();
                 out += i.getQuantity() + " " + i.getProduct().getCode() + " "
                         + i.getProduct().getPrice() + NEW_LINE;
-                total += i.getQuantity() * i.getProduct().getPrice();
             }
+            out += o.getTotalCost();
         }
-        out += total;
 
         return out;
     }
