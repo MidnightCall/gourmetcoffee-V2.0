@@ -3,21 +3,13 @@ import java.util.*;
 import java.text.*;
 
 /**
- * This class implements a gourmet coffee system.
- *
- * @author author name
- * @version 1.1.0
- * @see Product
- * @see Coffee
- * @see CoffeeBrewer
- * @see Catalog
- * @see OrderItem
- * @see Order
- * @see SalesFormatter
- * @see PlainTextSalesFormatter
- * @see HTMLSalesFormatter
- * @see XMLSalesFormatter
+ *@ClassName HTMLSalesFormatter
+ *@Description
+ *@Author kojikoji
+ *@Date 2022.5.18
+ *@Version 4.0
  */
+
 public class GourmetCoffee  {
 
 	private static BufferedReader  stdIn =

@@ -1,5 +1,13 @@
 import java.util.Iterator;
 
+/**
+ *@ClassName HTMLSalesFormatter
+ *@Description
+ *@Author kojikoji
+ *@Date 2022.5.17
+ *@Version 1.0
+ */
+
 public class PlainTextSalesFormatter implements SalesFormatter {
     private final static String NEW_LINE =
             System.getProperty("line.separator");

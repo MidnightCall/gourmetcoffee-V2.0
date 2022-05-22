@@ -1,5 +1,13 @@
 import java.util.Iterator;
 
+/**
+ *@ClassName XMLSalesFormatter
+ *@Description
+ *@Author kojikoji
+ *@Date 2022.5.18
+ *@Version 3.0
+ */
+
 public class XMLSalesFormatter implements SalesFormatter{
     private final static String NEW_LINE =
             System.getProperty("line.separator");

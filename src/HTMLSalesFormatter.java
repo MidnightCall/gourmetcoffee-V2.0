@@ -1,6 +1,15 @@
 import java.util.Iterator;
 import java.util.Objects;
 
+/**
+ *@ClassName HTMLSalesFormatter
+ *@Description  HTML commit
+ *@Author kojikoji
+ *@Date 2022.5.17
+ *@Version 2.0
+ */
+
+
 public class HTMLSalesFormatter implements SalesFormatter{
     private final static String NEW_LINE =
             System.getProperty("line.separator");
